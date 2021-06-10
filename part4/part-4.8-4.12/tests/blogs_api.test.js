@@ -39,7 +39,7 @@ describe('Blogs', () => {
           const processedBlogToView = JSON.parse(JSON.stringify(blogToView))
           expect(response.body).toEqual(processedBlogToView)
     })
-    test('can be added with a valid user token', async () => {
+    test('can be added ', async () => {
         const newBlog = {
           title: 'New Blog For Testing',
           author: 'manoj',
